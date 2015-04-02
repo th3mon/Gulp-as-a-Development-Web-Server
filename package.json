@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/th3mon/Gulp-as-a-Development-Web-Server/issues"
   },
-  "homepage": "https://github.com/th3mon/Gulp-as-a-Development-Web-Server"
+  "homepage": "https://github.com/th3mon/Gulp-as-a-Development-Web-Server",
+  "devDependencies": {
+    "gulp-connect": "^2.2.0"
+  }
 }
