@@ -1,0 +1,19 @@
+{
+  "name": "Gulp-as-a-Development-Web-Server",
+  "version": "0.0.1",
+  "description": "Use gulpJS as local web server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/th3mon/Gulp-as-a-Development-Web-Server.git"
+  },
+  "author": "Przemyslaw Szelenberger <p.szelenberger@gmail.com> (http://github.com/th3mon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/th3mon/Gulp-as-a-Development-Web-Server/issues"
+  },
+  "homepage": "https://github.com/th3mon/Gulp-as-a-Development-Web-Server"
+}
