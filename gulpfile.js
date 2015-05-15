@@ -1,9 +1,23 @@
 var
   gulp = require('gulp'),
-  connect = require('gulp-connect');
+  connect = require('gulp-connect'),
+  less = require('gulp-less');
 
 gulp.task('webserver', function () {
-  connect.server();
+  connect.server({
+    livereload: true
+  });
 });
 
-gulp.task('default', ['webserver']);
+gulp.task('less', function () {
+  gulp.src('styles/main.less')
+    .pipe(less())
+    .pipe(gulp.dest('styles'))
+    .pipe(connect.reload());
+});
+
+gulp.task('watch', function () {
+  gulp.watch('styles/*.less', ['less']);
+});
+
+gulp.task('default', ['less', 'webserver', 'watch']);
